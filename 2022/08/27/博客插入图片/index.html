@@ -11,7 +11,7 @@
         name="viewport"
         content="width=device-width, initial-scale=1, maximum-scale=1"
       />
-      <title>Archives: 2022 |  Hexo</title>
+      <title>关于hexo博客插入图片内容解决方法 |  Hexo</title>
   <meta name="generator" content="hexo-theme-ayer">
       
       <link rel="shortcut icon" href="/favicon.ico" />
@@ -53,110 +53,189 @@
       
     <main class="content on">
       <section class="outer">
+  <article
+  id="post-博客插入图片"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h1 class="article-title sea-center" style="border-left:0" itemprop="name">
+  关于hexo博客插入图片内容解决方法
+</h1>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2022/08/27/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" class="article-date">
+  <time datetime="2022-08-26T16:00:00.000Z" itemprop="datePublished">2022-08-27</time>
+</a>   
+<div class="word_count">
+    <span class="post-time">
+        <span class="post-meta-item-icon">
+            <i class="ri-quill-pen-line"></i>
+            <span class="post-meta-item-text"> Word count:</span>
+            <span class="post-count">298</span>
+        </span>
+    </span>
+
+    <span class="post-time">
+        &nbsp; | &nbsp;
+        <span class="post-meta-item-icon">
+            <i class="ri-book-open-line"></i>
+            <span class="post-meta-item-text"> Reading time≈</span>
+            <span class="post-count">1 min</span>
+        </span>
+    </span>
+</div>
+ 
+    </div>
+      
+    <div class="tocbot"></div>
+
+
+
+
   
-  <ul class="ads">
-    
-        <li>
-            <a target="_blank" rel="noopener" href="https://curl.qcloud.com/kvO7hb43">
-                <img src="https://pic.imgdb.cn/item/62174b452ab3f51d912a5ccc.jpg" width="300" alt="云服务器限时秒杀">
-            </a>
-        </li>
-    
-        <li>
-            <a target="_blank" rel="noopener" href="https://www.vultr.com/?ref=8630075">
-                <img src="https://pic.imgdb.cn/item/62174b452ab3f51d912a5cd7.png" width="300" alt="vultr优惠vps">
-            </a>
-        </li>
-    
+    <div class="article-entry" itemprop="articleBody">
+       
+  <h2 id="一、插入图片要求："><a href="#一、插入图片要求：" class="headerlink" title="一、插入图片要求："></a>一、插入图片要求：</h2><ul>
+<li><p>md文件名和存放其图片文件夹一致</p>
+</li>
+<li><p>md图片访问路径的分割符使用 &#x2F;</p>
+</li>
+<li><p>图片访问路径中不能有空格</p>
+</li>
+<li><p>md中图片使用相对路径访问，如 .&#x2F;xxx&#x2F;yyy.jpg 或 xxx&#x2F;yyy.jpg</p>
+</li>
+<li><p>下载hexo-asset-image图片访问插件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-asset-image </span><br></pre></td></tr></table></figure></li>
 </ul>
-  
-  
-  <article class="articles">
-    
-    
-    <h1 class="page-type-title">2022</h1>
-    
-    
-  
-  
-  
-  
-  
-  
-  <div class="archives-wrap">
-    <div class="archive-year-wrap">
-      <a href="/archives/2022" class="archive-year">2022</a>
-    </div>
-    <div class="archives">
-      
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/08/27/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" class="archive-article-date">
-  <time datetime="2022-08-26T16:00:00.000Z" itemprop="datePublished">08/27</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2022/08/27/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/"
-    >关于hexo博客插入图片内容解决方法</a> 
-</h2>
- 
+<h2 id="二、具体步骤"><a href="#二、具体步骤" class="headerlink" title="二、具体步骤"></a>二、具体步骤</h2><h4 id="步骤一：博客根目录下的source-x2F-post下，创建同名md文件和存图文件夹"><a href="#步骤一：博客根目录下的source-x2F-post下，创建同名md文件和存图文件夹" class="headerlink" title="步骤一：博客根目录下的source&#x2F;_post下，创建同名md文件和存图文件夹"></a>步骤一：博客根目录下的source&#x2F;_post下，创建同名md文件和存图文件夹</h4><p>![image-20220827104613441](博客插入图片 &#x2F;image-20220827104613441.png)</p>
+<h4 id="步骤二：以相对路径的方式引入一张图片"><a href="#步骤二：以相对路径的方式引入一张图片" class="headerlink" title="步骤二：以相对路径的方式引入一张图片"></a>步骤二：以相对路径的方式引入一张图片</h4><p><img src="/2022/08/27/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/image-20220827104843261.png" alt="image-20220827104843261"></p>
+<h4 id="步骤三：下载图片访问插件"><a href="#步骤三：下载图片访问插件" class="headerlink" title="步骤三：下载图片访问插件"></a>步骤三：下载图片访问插件</h4><p><img src="/2022/08/27/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/image-20220827104959034.png" alt="image-20220827104959034"></p>
+<h4 id="步骤四：生成网站静态文件和进行本地预览"><a href="#步骤四：生成网站静态文件和进行本地预览" class="headerlink" title="步骤四：生成网站静态文件和进行本地预览"></a>步骤四：生成网站静态文件和进行本地预览</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo g </span><br><span class="line"></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
 
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/08/25/%E9%95%87%E5%BA%97%E4%B9%8B%E5%AE%9D/" class="archive-article-date">
-  <time datetime="2022-08-25T10:44:07.000Z" itemprop="datePublished">08/25</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2022/08/25/%E9%95%87%E5%BA%97%E4%B9%8B%E5%AE%9D/"
-    >镇店之宝</a> 
-</h2>
- 
+<h5 id="预览结果："><a href="#预览结果：" class="headerlink" title="预览结果："></a>预览结果：</h5><p><img src="/2022/08/27/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/image-20220827105405180.png" alt="image-20220827105405180"></p>
+<h5 id="该图片路径："><a href="#该图片路径：" class="headerlink" title="该图片路径："></a>该图片路径：</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Cannot GET /.com//%E9%95%87%E5%BA%97%E4%B9%8B%E5%AE%9D%5C%E5%8F%A4%E9%A3%8E%E7%BE%8E%E5%A5%B3.jpg</span><br></pre></td></tr></table></figure>
 
-    </header>
-    
-    
-  </div>
-</article>
-      
-  
-  
-      <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2022/08/25/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" class="archive-article-date">
-  <time datetime="2022-08-25T09:45:41.000Z" itemprop="datePublished">08/25</time>
-</a>
-       
-<h2 itemprop="name">
-  <a class="archive-article-title" href="/2022/08/25/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"
-    >GitHub + Hexo + Node.js + Git搭建个人博客</a> 
-</h2>
- 
 
-    </header>
-    
-    
-  </div>
-</article>
+
+<h2 id="三、图片还是无法显示，经过网上的一番查找，得以解决"><a href="#三、图片还是无法显示，经过网上的一番查找，得以解决" class="headerlink" title="三、图片还是无法显示，经过网上的一番查找，得以解决:"></a>三、图片还是无法显示，经过网上的一番查找，得以解决:</h2><h4 id="首先：删除原来的插件"><a href="#首先：删除原来的插件" class="headerlink" title="首先：删除原来的插件"></a>首先：删除原来的插件</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm remove hexo-asset-image</span><br></pre></td></tr></table></figure>
+
+<h4 id="其次：下载修改版的插件修改版的hexo-asset-image"><a href="#其次：下载修改版的插件修改版的hexo-asset-image" class="headerlink" title="其次：下载修改版的插件修改版的hexo-asset-image"></a>其次：下载修改版的插件<a target="_blank" rel="noopener" href="https://github.com/CodeFalling/hexo-asset-image">修改版的hexo-asset-image</a></h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save https://github.com/CodeFalling/hexo-asset-image</span><br></pre></td></tr></table></figure>
+
+<h4 id="再次：重新操作一波"><a href="#再次：重新操作一波" class="headerlink" title="再次：重新操作一波"></a>再次：重新操作一波</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo cl</span><br><span class="line"></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<h4 id="效果显著："><a href="#效果显著：" class="headerlink" title="效果显著："></a>效果显著：</h4><p><img src="/2022/08/27/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/image-20220827110447646.png" alt="image-20220827110447646"></p>
+ 
+      <!-- reward -->
       
+      <div id="reword-out">
+        <div id="reward-btn">
+          Donate
+        </div>
+      </div>
       
     </div>
+    
+
+    <!-- copyright -->
+    
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong>Copyright： </strong>
+          
+          Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.
+          
+        </li>
+      </ul>
+    </div>
+    
+    <footer class="article-footer">
+       
+<div class="share-btn">
+      <span class="share-sns share-outer">
+        <i class="ri-share-forward-line"></i>
+        分享
+      </span>
+      <div class="share-wrap">
+        <i class="arrow"></i>
+        <div class="share-icons">
+          
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="ri-weibo-fill"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="ri-wechat-fill"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="ri-qq-fill"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="ri-douban-line"></i>
+          </a>
+          <!-- <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a> -->
+          
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="ri-facebook-circle-fill"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="ri-twitter-fill"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="ri-google-fill"></i>
+          </a>
+        </div>
+      </div>
+</div>
+
+<div class="wx-share-modal">
+    <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://example.com/2022/08/27/%E5%8D%9A%E5%AE%A2%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div id="share-mask"></div>  
+    </footer>
   </div>
-  
-  
+
+   
+  <nav class="article-nav">
+    
+    
+      <a href="/2022/08/25/%E9%95%87%E5%BA%97%E4%B9%8B%E5%AE%9D/" class="article-nav-link">
+        <strong class="article-nav-caption">下一篇</strong>
+        <div class="article-nav-title">镇店之宝</div>
+      </a>
+    
+  </nav>
 
   
+   
+    
+    <script src="https://cdn.staticfile.org/twikoo/1.4.18/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: ""
+        })
+    </script>
+ 
+</article>
+
 </section>
       <footer class="footer">
   <div class="outer">
@@ -305,6 +384,22 @@
 <script src="/js/lazyload.min.js"></script>
 
 <!-- Tocbot -->
+ 
+<script src="/js/tocbot.min.js"></script>
+
+<script>
+  tocbot.init({
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
+  });
+</script>
 
 <script src="https://cdn.staticfile.org/jquery-modal/0.9.2/jquery.modal.min.js"></script>
 <link
